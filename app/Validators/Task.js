@@ -1,16 +1,16 @@
 "use strict";
 
-class Session {
+class Task {
   get validateAll() {
     return true;
   }
 
   get rules() {
     return {
-      email: "required|email",
-      password: "required"
+      title: "required",
+      due_date: "date"
     };
   }
 }
 
-module.exports = Session;
+module.exports = Task;

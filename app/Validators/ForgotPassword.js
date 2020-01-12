@@ -1,6 +1,6 @@
 "use strict";
 
-class Session {
+class ForgotPassword {
   get validateAll() {
     return true;
   }
@@ -8,9 +8,9 @@ class Session {
   get rules() {
     return {
       email: "required|email",
-      password: "required"
+      required_url: "required|url"
     };
   }
 }
 
-module.exports = Session;
+module.exports = ForgotPassword;
